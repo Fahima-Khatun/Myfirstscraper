@@ -11,10 +11,10 @@ html = scraperwiki.scrape("http://foo.com")
 print(html)
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-root.cssselect("div[align='left']")
-print(root.cssselect("div[align='left']")) 
+root.cssselect("a")
+print(root.cssselect("a")) 
 
-listofmatches=root.cssselect("div[align='left']")
+listofmatches=root.cssselect("a")
 
 record={}
 
