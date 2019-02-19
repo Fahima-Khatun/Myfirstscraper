@@ -12,7 +12,7 @@ print(html)
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 root.cssselect("div[align='left']")
-print(root.cssselect("div#footer")) 
+print(root.cssselect("a")) 
 listofmatches=root.cssselect("a")
 for match in listofmatches:
   print(match)
