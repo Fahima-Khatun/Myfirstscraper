@@ -4,7 +4,7 @@
 # import scraperwiki
 # import lxml.html
 #
-print("hello"
+print("hello")
 # # Read in a page
 # html = scraperwiki.scrape("http://foo.com")
 #
