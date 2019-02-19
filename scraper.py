@@ -11,12 +11,12 @@ html = scraperwiki.scrape("http://foo.com")
 print(html)
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-root.cssselect("a")
-print(root.cssselect("a")) 
-listofmatches=root.cssselect("a")
+root.cssselect("div[align='left']")
+print(root.cssselect("div[align='left']")) 
+listofmatches=root.cssselect("div[align='left']")
 for match in listofmatches:
   print(match)
-  print(lxml.html.tostring/match)
+  print(lxml.html.tostring(match))
 ##<a lookig for te liks
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
