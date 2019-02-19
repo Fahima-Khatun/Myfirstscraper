@@ -14,7 +14,7 @@ root = lxml.html.fromstring(html)
 root.cssselect("div[align='left']")
 print(root.cssselect("div#footer")) 
 listofmatches=root.cssselect("a")
-for match in list of matches:
+for match in listofmatches:
   print(match)
 ##<a lookig for te liks
 # # Write out to the sqlite database using scraperwiki library
